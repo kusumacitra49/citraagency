@@ -53,7 +53,7 @@ form .txt_field {
   pointer-events: none;
   transition: 0.5s;
 }
-.txt_field span::before {
+.txt_field span:before {
   content: "";
   position: absolute;
   top: 40px;
@@ -109,6 +109,13 @@ input[type="submit"]:hover {
 .signup_link a:hover {
   text-decoration: underline;
 }
+.alert{
+  background: #e44e4e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border:1px solid #b32929;
+}
 #message {
   background: #ff4e4e;
   color: white;
@@ -118,7 +125,7 @@ input[type="submit"]:hover {
 #alertBox {
   position: fixed;
   top: 20px;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   z-index: 999;
 }
