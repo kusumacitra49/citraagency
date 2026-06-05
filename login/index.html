@@ -1,31 +1,20 @@
-<!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Animated Login Form | CodingNepal</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="center">
-      <h1>Login</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" required />
-          <span></span>
-          <label>Nama Pengguna</label>
-        </div>
-        <div class="txt_field">
-          <input type="password" required />
-          <span></span>
-          <label>Password</label>
-        </div>
-        <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login" />
-        <div class="signup_link">Not a member? <a href="#">Signup</a></div>
-      </form>
+<form id="loginform">
+  <h3>Silahkan Login</h3>
+  <label for="Username">Nama Pengguna</label>
+  <input type="text" id="username" placeholder="Nama Pengguna .." required="required">
+
+  <labe; for="password">Password</labe>
+  <input type="password" id="password" palaceholder="Password .." required="required">
+  <!-- <p id="message"></p> -->
+  <button type="submit" >masuk</button>
+
+  <div class="spcial">
+    <div class="go"> <a href="register.html">Login </a></div>
+    <div class="kanan"><i class="fab fa-google"></i> google</div>
+  </div>
+    <button onclick="location.href='../index.html';">Home</button>
     <div id="alertBox" class="alert" style="display:none;"></div>
-    </div>
-    <script src="js/login.js"></script>
+</form>
+<script scr="js/login.js"></sript>
   </body>
-</html>
+  </html>
