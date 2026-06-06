@@ -1,32 +1,152 @@
 <!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Animated Login Form | CodingNepal</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Siapa kamu</title>
+
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="center">
-      <h1>Login</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" id="username"required/>
-          <span></span>
-          <label>Nama Pengguna</label>
+
+    <style>
+        .alert-box{
+            display:none;
+            margin-bottom:15px;
+            padding:12px;
+            border-radius:10px;
+            background:#ff4d4d;
+            color:white;
+            text-align:center;
+            font-size:14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <div class="login-header">
+            <div class="logo-icon">⚡</div>
+            <h2>Sign In</h2>
+            <p>Access your account</p>
         </div>
-        <div class="txt_field">
-          <input type="password" id="password"required/>
-          <span></span>
-          <label>Password</label>
+
+        <form class="login-form" id="loginForm">
+
+            <!-- ALERT -->
+            <div id="alertBox" class="alert-box"></div>
+
+            <!-- USERNAME -->
+            <div class="form-group">
+                <div class="input-wrapper">
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        required
+                    />
+
+                    <label for="username">Username</label>
+
+                    <span class="input-line"></span>
+
+                </div>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="form-group">
+                <div class="input-wrapper password-wrapper">
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+
+                    <label for="password">Password</label>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        id="passwordToggle"
+                    >
+                        👁
+                    </button>
+
+                    <span class="input-line"></span>
+
+                </div>
+            </div>
+
+            <!-- OPTIONS -->
+            <div class="form-options">
+
+                <div class="remember-wrapper">
+                    <input type="checkbox" id="remember">
+
+                    <label for="remember" class="checkbox-label">
+                        Keep me signed in
+                    </label>
+                </div>
+
+                <a href="#" class="forgot-password">
+                    Forgot password?
+                </a>
+
+            </div>
+
+            <!-- BUTTON -->
+            <button type="submit" class="login-btn btn">
+                <span class="btn-text">Sign In</span>
+            </button>
+
+        </form>
+
+        <!-- DIVIDER -->
+        <div class="divider">
+            <span>or</span>
         </div>
-        <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login" />
-        <div class="signup_link">Not a member? <a href="#">Signup</a></div>
-      </form>
-    <button onclick="location.href=' ../index.html';">Home</button>
-    <div id="alertBox" class="alert" style="display:none;"></div>
+
+        <!-- SOCIAL -->
+        <div class="social-login">
+
+            <button type="button" class="social-btn google-btn">
+                Continue with Google
+            </button>
+
+            <button type="button" class="social-btn apple-btn">
+                Continue with Apple
+            </button>
+
+        </div>
+
+        <!-- SIGNUP -->
+        <div class="signup-link">
+            <p>
+                New here?
+                <a href="../login/register.html">
+                    Create an account
+                </a>
+            </p>
+        </div>
+
     </div>
-    <script src="js/login.js"></script>
-  </body>
+
+    <!-- BACKGROUND -->
+    <div class="background-effects">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+    </div>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
 </html>
